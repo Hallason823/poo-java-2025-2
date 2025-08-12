@@ -1,8 +1,8 @@
 public class Circulo {
     double raio;
 
-    Circulo() {
-        raio = 2;
+    Circulo(double r) {
+        raio = r;
     }
 
     double comprimento() {
