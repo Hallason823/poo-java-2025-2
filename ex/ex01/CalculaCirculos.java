@@ -6,5 +6,14 @@ public class CalculaCirculos {
 
         System.out.println(c1.area());
         System.out.println(c2.area());
+
+        System.out.println("Raio: " + c1.getRaio());
+        System.out.println(c1.area());
+
+        c1.setRaio(3);
+        System.out.println("Raio: " + c1.getRaio());
+        System.out.println(c1.area());
+
+        c1.setRaio(-1);
     }
 }
