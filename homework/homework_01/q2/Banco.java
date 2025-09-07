@@ -1,6 +1,7 @@
 public class Banco {
 
-    private Cliente[] clientes = new Cliente[2];
+    private static final int NUM_CLIENTES = 2;
+    private Cliente[] clientes = new Cliente[NUM_CLIENTES];
 
     public Cliente[] getClientes() {
         return clientes;
@@ -17,8 +18,7 @@ public class Banco {
     public String operacoes() {
         int saque = 100, deposito = 50, min = 0;
         String novo_nome_c2 = "Ada Lovelace", novo_cpf_c1 = "12345689";
-        int quantidade_clientes = clientes.length;
-        for (int i = 0; i < quantidade_clientes; i++) {
+        for (int i = 0; i < NUM_CLIENTES; i++) {
             clientes[i].saque(saque);
             clientes[i].deposito(deposito);
             if (clientes[i].extrato() < min) {
